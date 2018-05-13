@@ -1,0 +1,1 @@
+This is a repository that will be used for JavaScript excercises I've done in the NodeGirls workshop. 
