@@ -76,3 +76,50 @@ var num2 = 2;
 
 substract(num1, num2)
 console.log(substract(num1, num2))
+
+// ✦ create an if/else statement using comparison operators
+
+
+var number = 7;
+if (number > 7) {
+    console.log('High!');
+} else if (number < 7) {
+    console.log('Low!');
+} else {
+    console.log('You guessed our number.');
+}; 
+
+/* 1. We have 2 functions from the previous task - add and subtract. Let’s tell the machine to decide what action to run depending on the arithmetical operator(+,-,/, * etc). If the operator is ‘+’, we should use the add function, else we should use the subtract function.
+Create a variable called operator and let it be equal to ‘-‘.
+Create an if/else statement based on what operator we have. If we have an operator equal to ‘+’, we call add function with any two numbers, else the subtract function with any 2 numbers.
+Log your result. (Console.log())
+2. Create 2 more functions and name them divide and multiply. After that let’s extend our ‘if else’ check that we already created by checking if it is equal to ‘/’, call ‘divide’ function. If it is ‘*’, call multiply function, else log this message: “Sorry, we don’t know this operator” on the console. */
+
+var operator = '-';
+
+if (operator == '+') {
+    console.log(add(3,2));
+}
+    else {
+    console.log(substract(3,2));
+};
+
+function divide(num1, num2) {
+    var result = num1 / num2;
+    return result;
+};
+
+function multiply(num1, num2) {
+    var result = num1 * num2;
+    return result;
+};
+
+var operator = '/';
+
+if (operator == '/') {
+    console.log(divide(6,2));
+} else if (operator == '*') {
+    console.log(multiply(1,2));
+} else {
+    console.log("Sorry, we don't know this operator");
+};
