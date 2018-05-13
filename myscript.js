@@ -165,3 +165,78 @@ console.log(favouriteFood);
 favouriteFood.push('soy bean stew');
 console.log(favouriteFood)
 
+// ✦ Use a 'while loop' and a 'for loop'
+
+var number = 0;
+while (number < 10) {
+    // 'less than 10'' is a condition (finishing point)
+    console.log('JavaScript is awesome!');
+    number = number + 1;
+    // + 1 is a counter/size of the step
+}
+
+var i;
+for (i = 0; i <= 5; i = i + 1) {  // (starting point; condition; step)
+    console.log('Purr');
+}
+
+// Note: i++ is another way of writing i = i+1.
+
+var animals = ['cats', 'dogs', 'horses'];
+for (var i = 0; i < animals.length; i++) {
+    console.log('I love ' + animals[i]);
+}
+
+//The == operator will compare for equality after doing any necessary type conversions. 
+//The === operator will not do the conversion, so if two values are not the same type === will simply return false. 
+
+if (1 == '1') {
+    console.log('equals');
+}
+
+// In javaScript, using === is safer
+
+if ('1' === '1') {
+    console.log("equals '1'");
+}
+
+var i = '1';
+ if (i === '1') {
+    console.log("equals '1'");
+ }
+
+/* 1. Using a ‘while loop’, tell your computer to log the numbers from ten to one.
+2. Log every 3rd number from 3 to 22 using a ‘for loop’.
+3. Try to log your favourite food on the console. (use your favouriteFood array in the previous step.) */
+
+ var number = 0;
+
+ while (number < 10) {
+    //console.log(number++) 
+    console.log(number = number + 1);
+    //number+=1
+ }
+ 
+ //Log every 3rd number from 3 to 22 using a ‘for loop’.
+
+ // Solution no 1.
+
+  for (var i = 3; i <= 22; i = i + 3) { 
+     console.log(i);    
+ }
+
+ // Better solution no 2.
+ 
+ for (var i = 3; i <= 22; i = i + 1) {
+     if (i%3 == 0) {
+         console.log(i);
+     }
+ }
+
+// ruby - i/3 
+// command + option + i
+// option + direction key
+
+for (var i = 0; i < favouriteFood.length; i = i + 1){
+     console.log(favouriteFood[i]);
+}
